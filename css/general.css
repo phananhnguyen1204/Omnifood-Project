@@ -118,6 +118,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -126,8 +127,25 @@ body {
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
+  /* Only Necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
   /* PUT TRANSITION ON ORIGINAL STATE */
   transition: all 0.3s;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 strong {
@@ -170,6 +188,10 @@ strong {
   color: #e67e22;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
 /******************************/
 /* HELPER/SETTING CLASS*/
 /******************************/
@@ -190,6 +212,10 @@ strong {
   display: grid;
   column-gap: 6rem;
 }
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
 .grid:not(:last-child) {
   margin-bottom: 9.6rem;
 }
@@ -204,6 +230,10 @@ strong {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 .grid--center-v {
   align-items: center;
