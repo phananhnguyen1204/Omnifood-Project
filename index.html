@@ -9,9 +9,16 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+      
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script
+    defer
+    src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+  ></script>
+    <script defer src="js/script.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -21,13 +28,19 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link">Section 1</a></li>
-          <li><a href="#" class="main-nav-link">Section 2</a></li>
-          <li><a href="#" class="main-nav-link">Section 3</a></li>
-          <li><a href="#" class="main-nav-link">Section 4</a></li>
-          <li><a href="#" class="main-nav-link nav-cta">Section 5</a></li>
+          <li><a href="#how" class="main-nav-link">How it works</a></li>
+          <li><a href="#meals" class="main-nav-link">Meals</a></li>
+          <li><a href="#testimonials" class="main-nav-link">Testimonials</a></li>
+          <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
+          <li><a href="#cta" class="main-nav-link nav-cta">Try for free</a></li>
         </ul>
       </nav>
+      
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav"name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
@@ -42,10 +55,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img src="img/customers/customer-1.jpg" alt="Customer Photo" />
@@ -79,7 +92,7 @@
         </div>
       </section>
       <!-- Section How To -->
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -145,7 +158,7 @@
       </section>
 
       <!-- Meals Section -->
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">
@@ -255,7 +268,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -355,7 +368,7 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container center-text">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -453,7 +466,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
